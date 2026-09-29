@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Menswear — Coimbatore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <a href="/" class="logo">
+    <img src="/logo.png" alt="Friends Menswear" class="logo-img">
+    <span class="logo-fallback">
+        <span class="logo-friends">Friends</span>
+        <span class="logo-menswear">Menswear</span>
+    </span>
+</a>
+        <nav>
+            <a href="#collection">Collection</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="cta-btn">Visit Us</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1 class="hero-title">
+            <span class="hero-friends">Dress Sharp.</span>
+            <span class="hero-menswear">Feel Confident.</span>
+        </h1>
+        <p>Premium shirts, trousers, and ethnic wear for every occasion. Group orders welcome.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Visit Store</a>
+            <a href="#collection" class="btn-secondary">View Collection</a>
+        </div>
+    </div>
+</section>
+
+<section id="collection" class="collection">
+    <div class="container">
+        <h2>Our Collection</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">👔</div>
+                <h3>Formal Shirts</h3>
+                <p>Cotton & linen, all sizes</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">👖</div>
+                <h3>Trousers & Jeans</h3>
+                <p>Slim, regular, relaxed fits</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🪔</div>
+                <h3>Ethnic Wear</h3>
+                <p>Kurta, dhoti, sherwani</p>
+            </div>
+           
+            <div class="card">
+                <div class="card-icon">🎉</div>
+                <h3>Group Orders</h3>
+                <p>Weddings, corporate, events</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <h2>What We Offer</h2>
+        <div class="services-list">
+            <div class="service-row"><span class="check">✓</span><span>Group and bulk orders welcome</span></div>
+            
+            <div class="service-row"><span class="check">✓</span><span>7-day exchange policy on unused items</span></div>
+            
+            <div class="service-row"><span class="check">✓</span><span>WhatsApp ordering available</span></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Visit Our Store</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Address</h3>
+                <p id="store-address">—</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone</h3>
+                <p id="store-phone">—</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">🕐</div>
+                <h3>Hours</h3>
+                <p id="store-hours">—</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 Friends Menswear. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Chat Widget -->
+<div id="fm-widget">
+    <button id="fm-bubble" aria-label="Open chat">
+        <span class="bubble-icon">💬</span>
+    </button>
+
+    <div id="fm-popup" class="fm-popup">
+        <div class="popup-header">
+            <div class="popup-avatar">
+                <img src="/logo.png" alt="Friends" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="popup-avatar-fallback" style="display:none;">FM</span>
+            </div>
+            <div class="popup-info">
+                <div class="popup-name">Friends Menswear</div>
+                <div class="popup-status">● Online</div>
+            </div>
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ta">த</button>
+            </div>
+            <button id="fm-close" class="popup-close">×</button>
+        </div>
+        <div id="fm-messages" class="fm-messages">
+            <div class="msg msg-bot">
+                <div class="msg-text" id="welcome-msg">Hi! 👋 I'm Friends Menswear's virtual assistant. How can I help you today?</div>
+            </div>
+        </div>
+        <div class="fm-input">
+            <input type="text" id="fm-input-field" placeholder="Type your message..." autocomplete="off">
+            <button id="fm-send" aria-label="Send">➤</button>
+        </div>
+        <div class="popup-footer">Powered by Friends Assistant</div>
+    </div>
+</div>
+
+<script src="/widget.js"></script>
+</body>
+</html>

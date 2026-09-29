@@ -1,0 +1,7 @@
+STORE_NAME=Friends Menswear
+STORE_TAGLINE=Group Shirts & T-Shirts Available
+STORE_PHONE=+91 90927 17474
+STORE_WHATSAPP=+91 90927 17474
+STORE_ADDRESS=Thidal South Street, 8GW8+CH6, Muthukulathur, Tamil Nadu 623704, India
+STORE_HOURS=Mon-Thu & Sat: 09:00 - 21:00 | Fri: 09:00 - 12:00, 14:30 - 21:00
+OWNER_NAME=Sikkandhar Ubaidullah
